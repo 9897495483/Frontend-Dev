@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #010409;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e6edf3;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+/* ===== Main Section ===== */
+main {
+  flex: 1;
+  margin-top: 80px; /* Space for fixed header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 10%;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 800px;
+}
+
+/* Circular Image Placeholder */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #f1c40f;
+  border-radius: 50%;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+/* Bio Text */
+.bio h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+
+.bio p {
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #010409;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  border-top: 1px solid #1a1a1a;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bio h2 {
+    font-size: 1.5rem;
+  }
+}
