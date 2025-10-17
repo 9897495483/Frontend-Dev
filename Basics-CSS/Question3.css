@@ -1,0 +1,109 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #212529;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* ===== MAIN SECTION ===== */
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 10%;
+  flex: 1;
+}
+
+/* ===== CARD STYLES ===== */
+.team-card {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 320px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.team-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: #212529;
+}
+
+.team-card h3 {
+  font-size: 1rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Paragraph */
+.team-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== HIGHLIGHTED CARD ===== */
+.lead {
+  background-color: #f0f9ff;
+  border: 3px solid #007bff;
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.2);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #212529;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .team-card {
+    width: 90%;
+    max-width: none;
+  }
+}
